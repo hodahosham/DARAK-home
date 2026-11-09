@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دارك | أثاث منزلي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-strip">خصومات تصل إلى 30% على مختارات من الأثاث المنزلي</div>
+
+  <header class="site-header">
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+    <a class="logo" href="index.html">دارك<span>.</span><small>للأثاث والديكور</small></a>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="index.html">الرئيسية</a>
+      <a href="#categories">الأقسام</a>
+      <a href="#offers">العروض</a>
+      <a href="about.html">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="بحث">⌕</button>
+      <a class="cart-link" href="cart.html" aria-label="سلة المشتريات">🛒 <span id="cartCount">0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85" alt="غرفة معيشة عصرية">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">لمسة أناقة لكل بيت</p>
+        <h1>بيتك يستحق<br>الأجمل دائمًا</h1>
+        <p>اكتشف تشكيلتنا المختارة من الأثاث العصري بتصميمات تجمع الراحة والفخامة.</p>
+        <a class="primary-btn" href="#products">تسوق الآن <span>←</span></a>
+      </div>
+      <div class="hero-dots"><i class="selected"></i><i></i><i></i></div>
+    </section>
+
+    <section class="category-section section-wrap" id="categories">
+      <div class="section-heading">
+        <div><span class="eyebrow">تسوق حسب احتياجك</span><h2>أقسامنا الرئيسية</h2></div>
+        <a href="#products" class="text-link">عرض كل الأقسام ←</a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="#products"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="كنب"><span>غرف المعيشة</span></a>
+        <a class="category-card" href="#products"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80" alt="غرف نوم"><span>غرف النوم</span></a>
+        <a class="category-card" href="#products"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=500&q=80" alt="ديكور" onerror="this.src='https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=500&q=80'"><span>ديكورات</span></a>
+        <a class="category-card" href="#products"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80" alt="مطابخ"><span>غرف الطعام</span></a>
+        <a class="category-card" href="#products"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80" alt="مفروشات"><span>مفروشات</span></a>
+      </div>
+    </section>
+
+    <section class="offer-banner section-wrap" id="offers">
+      <div>
+        <span class="eyebrow">اختيارات هذا الموسم</span>
+        <h2>جدّد بيتك<br>بأسلوبك الخاص</h2>
+        <p>تصميمات مميزة وأسعار تناسب كل بيت.</p>
+        <a href="#products" class="light-btn">اكتشف العروض</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85" alt="ديكور منزل أنيق">
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading">
+        <div><span class="eyebrow">اختياراتنا لك</span><h2>الأكثر مبيعًا</h2></div>
+        <a href="#products" class="text-link">عرض المزيد ←</a>
+      </div>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="living">غرف معيشة</button>
+        <button class="filter-btn" data-filter="bedroom">غرف نوم</button>
+        <button class="filter-btn" data-filter="decor">ديكور</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="living">
+          <div class="product-image"><span class="tag">الأكثر طلبًا</span><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=85" alt="كنبة مودرن"><button class="quick-add" data-id="1">＋</button></div>
+          <div class="product-info"><h3>كنبة مودرن بثلاثة مقاعد</h3><p>تصميم مريح بلون بيج أنيق</p><div class="price-row"><strong>18,500 ج.م</strong><del>21,000 ج.م</del></div></div>
+        </article>
+        <article class="product-card" data-category="bedroom">
+          <div class="product-image"><span class="tag sale">خصم 15%</span><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=85" alt="سرير خشبي"><button class="quick-add" data-id="2">＋</button></div>
+          <div class="product-info"><h3>سرير نوم بتصميم هادئ</h3><p>خامات قوية وتشطيب فاخر</p><div class="price-row"><strong>24,900 ج.م</strong><del>29,000 ج.م</del></div></div>
+        </article>
+        <article class="product-card" data-category="living">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=700&q=85" alt="كرسي استرخاء"><button class="quick-add" data-id="3">＋</button></div>
+          <div class="product-info"><h3>كرسي استرخاء فاخر</h3><p>راحة وأناقة في قطعة واحدة</p><div class="price-row"><strong>9,750 ج.م</strong></div></div>
+        </article>
+        <article class="product-card" data-category="decor">
+          <div class="product-image"><span class="tag">جديد</span><img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&q=85" alt="طاولة جانبية"><button class="quick-add" data-id="4">＋</button></div>
+          <div class="product-info"><h3>طاولة جانبية خشبية</h3><p>تفاصيل بسيطة ولمسة دافئة</p><div class="price-row"><strong>3,200 ج.م</strong></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="room-banner section-wrap">
+      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1600&q=85" alt="غرفة نوم متكاملة">
+      <div class="room-copy"><span class="eyebrow">مساحة للراحة</span><h2>غرف نوم<br>تحب ترجع لها</h2><a href="#products" class="primary-btn">اكتشف المجموعة ←</a></div>
+    </section>
+
+    <section class="features section-wrap">
+      <div><b>🚚</b><h3>توصيل آمن</h3><p>نوصل طلبك لحد باب البيت</p></div>
+      <div><b>✦</b><h3>جودة مضمونة</h3><p>خامات مختارة بعناية</p></div>
+      <div><b>♡</b><h3>تصميمات عصرية</h3><p>تفاصيل تناسب ذوقك</p></div>
+      <div><b>☎</b><h3>خدمة عملاء</h3><p>نحن هنا لمساعدتك</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand"><a class="logo" href="#">دار<span>.</span><small>للأثاث والديكور</small></a><p>نصنع مساحة تشبهك، بتفاصيل تجمع الجمال والراحة.</p></div>
+    <div><h4>روابط مهمة</h4><a href="index.html">الرئيسية</a><a href="about.html">من نحن</a><a href="cart.html">سلة المشتريات</a></div>
+    <div><h4>خدمة العملاء</h4><a href="#contact">تواصل معنا</a><a href="#contact">سياسة الاستبدال</a><a href="#contact">الشحن والتوصيل</a></div>
+    <div><h4>تابعنا</h4><p>يسعدنا تواصلك معنا</p><div class="socials">◎　f　𝕏</div></div>
+    <div class="copyright">© 2026 دار للأثاث والديكور — جميع الحقوق محفوظة</div>
+  </footer>
+
+  <div class="toast" id="toast">تمت إضافة المنتج إلى السلة</div>
+  <script src="script.js"></script>
+</body>
+</html>
